@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_URL = '/api/v1';
+// Use environment variable for API base URL, fallback to production URL
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://accounting-software-4ffi.onrender.com';
+const API_URL = `${API_BASE_URL}/api/v1`;
 
 // Create axios instance
 const api = axios.create({

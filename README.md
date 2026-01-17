@@ -137,3 +137,48 @@ A complete, professional-grade **Income & Expense Management System** built with
 - Node.js (v16 or higher)
 - MySQL (v8 or higher)
 - npm or yarn
+
+### Frontend Setup
+
+1. **Clone & Navigate**
+```bash
+cd income-expense-frontend
+```
+
+2. **Install Dependencies**
+```bash
+npm install
+```
+
+3. **Environment Configuration**
+The project uses environment variables for API configuration:
+
+- `.env.development` - Used in development mode
+- `.env.production` - Used in production build
+- `.env.example` - Template file
+
+For **local development**, create a `.env.local` file:
+```env
+VITE_API_BASE_URL=http://localhost:5000
+```
+
+For **production**, the `.env.production` file is already configured with:
+```env
+VITE_API_BASE_URL=https://accounting-software-4ffi.onrender.com
+```
+
+4. **Run Development Server**
+```bash
+npm run dev
+```
+Frontend will run on: http://localhost:3000
+
+5. **Build for Production**
+```bash
+npm run build
+```
+
+6. **Preview Production Build**
+```bash
+npm run preview
+```
