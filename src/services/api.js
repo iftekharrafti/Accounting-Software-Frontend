@@ -8,8 +8,11 @@ const API_URL = `${API_BASE_URL}/api/v1`;
 const api = axios.create({
   baseURL: API_URL,
   headers: {
-    'Content-Type': 'application/json'
-  }
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  },
+  withCredentials: false, // Set to true if backend supports credentials
+  timeout: 30000 // 30 seconds timeout
 });
 
 // Request interceptor to add auth token
