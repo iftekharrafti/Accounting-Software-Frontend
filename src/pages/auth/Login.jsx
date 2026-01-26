@@ -25,11 +25,11 @@ export default function Login() {
     setLoading(true);
 
     const result = await login(formData);
-    
+
     if (result.success) {
       navigate('/');
     }
-    
+
     setLoading(false);
   };
 
@@ -133,8 +133,8 @@ export default function Login() {
           {/* Demo Credentials */}
           <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-100">
             <p className="text-xs font-medium text-blue-900 mb-2">Demo Credentials:</p>
-            <p className="text-xs text-blue-700">Email: admin@example.com</p>
-            <p className="text-xs text-blue-700">Password: admin123</p>
+            <p className="text-xs text-blue-700">Email: admin@gmail.com</p>
+            <p className="text-xs text-blue-700">Password: 123456</p>
           </div>
 
           {/* Register Link */}
